@@ -1,3 +1,8 @@
 # tradingbot
 
-Trading bot using sentiment analysis (FinBERT), Lumibot, and Alpaca API
+Trading bot analyzes sentiment of live news events and performs trades.
+
+Uses:
+- FinBERT (sentiment analysis)
+- Lumibot (strategy + backtesting)
+- Alpaca API (perform live trades)
