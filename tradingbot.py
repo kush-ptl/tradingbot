@@ -18,7 +18,7 @@ ALPACA_CREDS = {
     "PAPER": True
 }
 
-class MLTrader(Strategy):
+class SentimentAnalysisTrader(Strategy):
     def initialize(self, symbol:str="SPY", cash_at_risk:float=0.5):
         self.symbol = symbol
         self.sleeptime = "24H"
@@ -82,7 +82,7 @@ start_date = datetime(2020, 1, 1)
 end_date = datetime(2023, 12, 31)
 
 broker = Alpaca(ALPACA_CREDS)
-strategy = MLTrader(name='mlstrat', broker=broker,
+strategy = SentimentAnalysisTrader(name='sentiment_analysis_strategy', broker=broker,
                     parameters={"symbol":"SPY", 
                                 "cash_at_risk":0.5})
 strategy.backtest(
@@ -92,6 +92,7 @@ strategy.backtest(
     parameters={"symbol":"SPY", "cash_at_risk":0.5}
 )
 
+# To perform live trades, uncomment below and comment out backtesting code above.
 # trader = Trader()
 # trader.add_strategy(strategy)
 # trader.run_all()
