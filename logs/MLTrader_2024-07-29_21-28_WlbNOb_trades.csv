@@ -1,3 +1,0 @@
-time,strategy,identifier,symbol,side,type,status,multiplier,time_in_force,asset.strike,asset.multiplier,asset.asset_type,price,filled_quantity,trade_cost
-2020-02-03 09:30:00-05:00,MLTrader,5f2f1015c9d443c0b1af9848a49aa916,SPY,sell,market,new,1,gtc,0.0,1,stock,,,
-2020-02-03 09:30:00-05:00,MLTrader,5f2f1015c9d443c0b1af9848a49aa916,SPY,sell,market,fill,1,gtc,0.0,1,stock,323.3500061035156,155.0,0.0
