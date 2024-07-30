@@ -1,0 +1,7 @@
+lumibot
+timedelta
+alpaca-trade-api
+torch
+torchvision
+torchaudio
+transformers
